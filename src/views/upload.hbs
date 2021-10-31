@@ -1,0 +1,23 @@
+<div style="margin-top: 5rem; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+
+<div class="col-12 col-md-6 col-lg-5 mb-5 mb-lg-0">
+    <div class="card bg-primary shadow-soft border-light p-4">
+        <div class="card-header text-center pb-0 mb-3">
+            <h2 class="h4">Choose the song you want to upload</h2>
+            <span>You can only submit 25 songs at a time</span>
+        </div>
+        <div class="card-body">
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="mt-4">
+                <div class="form-group">
+                    <div class="custom-file mb-4">
+                        <label class="custom-file-label" for="custom">Choose file</label>
+                        <input type="file" id="custom" class="custom-file-input" name="songs" multiple accept=".mp3">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
